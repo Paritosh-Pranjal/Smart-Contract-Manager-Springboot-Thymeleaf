@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}" />
+    <style>
+      .container {
+        margin: auto;
+        width: 50%;
+        padding: 30px;
+        background-color: #e2e2e2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-2 font-bold">Welcome to home page</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima
+        alias repudiandae, ullam eius culpa nemo. Harum distinctio officiis non
+        libero repellat ut, et voluptatum accusantium architecto itaque iste!
+        Assumenda at impedit dolorum vel fugit eaque ab inventore hic vitae
+        debitis facere quod ut, consectetur doloribus enim officiis doloremque
+        blanditiis?
+      </p>
+      <h1 data-th-text="${name}">Name</h1>
+      <p>Youtube channel: <span data-th-text="${yt_channel}"> </span></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

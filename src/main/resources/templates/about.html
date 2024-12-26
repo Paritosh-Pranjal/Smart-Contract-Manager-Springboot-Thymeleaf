@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is About Page</h1>
+    <!-- Using Fragment  -->
+    <div class="host-tag" th:insert="~{base :: parent}">
+
+    </div>
+  </body>
+</html>
+
+
+
+<!-- 
+1. th:replace""~{base :: parent(3,4)} 
+2. th:replace""~{base :: parent(third_content)}
+3. th:replace""~{base :: parent(~{:: #third_content})
+4. th:replace""~{base :: parent(~{:: .third_content})} 
+-->
